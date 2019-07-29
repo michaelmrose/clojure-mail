@@ -3,7 +3,7 @@
   :url "https://github.com/forward/clojure-mail"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.7.0"]
+  :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.jsoup/jsoup "1.8.3"] ;; for cleaning up messy html messages
                  [com.sun.mail/javax.mail "1.5.5"]
                  [medley "1.0.0"]]
