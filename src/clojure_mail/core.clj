@@ -139,16 +139,6 @@
       false
       true)))
 
-(defn folders
-  "Returns a seq of all IMAP folders inlcuding sub folders"
-  ([store] (folders store (.getDefaultFolder store)))
-  ([store f]
-   (map
-     #(cons (.getName %)
-            (if (sub-folder? %)
-              (folders store %)))
-     (.list f))))
-
 (def folder-permissions
   {:readonly  Folder/READ_ONLY
    :readwrite Folder/READ_WRITE})
