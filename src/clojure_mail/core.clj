@@ -131,11 +131,6 @@
   [^IMAPStore s name]
   (.getFolder s name))
 
-(defn get-folder-uid-validity
-  "Return the Folder UIDValidity"
-  [folder]
-  (.getUIDValidity folder))
-
 (def sub-folder?
   "Check if a folder is a sub folder"
   (fn [folder]
